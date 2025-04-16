@@ -1,0 +1,26 @@
+{
+  "OPENAI_KEY": "your_openai_key_here",
+  "current_run": "mia",
+  "promptdpsgd": {
+    "prompt_length": 100,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "noise_multiplier": 1.0,
+    "device": "cuda:0",
+    "target_epsilon": "inf",
+    "delta": 1e-5,
+    "dataset_path": "sst2"
+  },
+  "promptpate": {
+    "num_teachers": 10,
+    "examples_per_teacher": 3,
+    "sigma1": 1,
+    "sigma2": 20,
+    "threshold": 180,
+    "target_eps": 0,
+    "delta": 1e-6,
+    "candid_prompts": 3,
+    "dataset_path": "sst2",
+    "infer_dataset": "imdb"
+  }
+}
